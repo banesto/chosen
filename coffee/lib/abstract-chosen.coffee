@@ -34,6 +34,9 @@ class AbstractChosen
     @include_group_label_in_selected = @options.include_group_label_in_selected || false
     @max_shown_results = @options.max_shown_results || Number.POSITIVE_INFINITY
     @option_images = @options.option_images || false
+    @native_placeholder = @options.native_placeholder || false
+
+    return
 
   set_default_text: ->
     if @form_field.getAttribute("data-placeholder")
